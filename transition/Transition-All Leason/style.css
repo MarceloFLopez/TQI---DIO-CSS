@@ -5,13 +5,15 @@ body{
     color: white;
     font-family: 'amatic sc', sans-serif;
 }
-
+a{
+    text-decoration:none
+}
 /*HEADER*/
 
 .header-wrapper{
     height: 100vh;
     width: 100%;
-    background: linear-gradient( -45deg, #592768, #295f7c, #4ca59b, #1fa194);
+    background: linear-gradient( -45deg, #050404, #2e1c2b, #4a1942, #893168);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -38,10 +40,10 @@ h2{
 
 .social-media a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 24px;
     padding: 1rem 4rem;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     min-width: 4rem;
     display: flex;
     justify-content: center;
@@ -67,7 +69,7 @@ a:hover{
     }
 }
 
-/*MENY HAMBUEGER*/
+/*MENU HAMBUEGER*/
 
 .checkbox-container{
     display: flex;
@@ -79,21 +81,21 @@ a:hover{
     height: 100px;
     width: 100px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     cursor: pointer;
     z-index: 9999;
-    transition: 400ms ease-in-out 0;
+    transition: 400ms ease-in-out 0s;
 }
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: #ffffff;
     position: absolute;
     border-radius: 4px;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .checkbox .trace:nth-child(1){
@@ -119,13 +121,13 @@ a:hover{
     position: absolute;
     top: 28px;
     right: 30px;
-    background: transparent;
+    background: transparent; 
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+    border-radius:  50% ;
     box-shadow: 0px 0px 0px 0px white;
     z-index: -1;
-    transition: 400ms ease-in-out 0; 
+    transition: 400ms ease-in-out 0s;
 }
 
 .menu-itens{
@@ -140,13 +142,13 @@ a:hover{
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: 400ms ease-in-out 0;
+    transition: 400ms ease-in-out 0s;
 }
 
 .menu-itens ul{
     list-style-type: none;
 }
-.menu-itens ul li{
+.menu-itens ul li a{
    margin: 10px 0;
    color: #2e1c2b;
    text-decoration: none;
