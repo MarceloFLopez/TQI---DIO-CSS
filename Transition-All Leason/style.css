@@ -191,3 +191,36 @@ a:hover{
     opacity: 1;
 }
 
+/*CARD*/
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.card{
+    height: 300px;
+    width: 400px;
+    margin: 3rem 0 0;
+    background-image: url(images/room.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
